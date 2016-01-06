@@ -5933,7 +5933,6 @@ th.hide-for-touch {
     display: table-cell !important; }
   th.show-for-print {
     display: table-cell !important; } }
-
 @font-face {
   font-family: "foundation-icons";
   src: url(foundation-icons.eot);

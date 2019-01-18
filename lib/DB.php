@@ -12,13 +12,6 @@
     private $dbh;
     private $queryCount = 0;
 
-    public function __construct() {
-        $this->host = getenv('DB_HOST') ?: "host";
-        $this->dbname = getenv('DB_NAME') ?: "dbname";
-        $this->user = getenv('DB_USER') ?: "name";
-        $this->pass = getenv('DB_PASS') ?: "pass";
-    }
-
     /**
      * Return the logged query count. This isn't accurate.
      */
@@ -60,8 +53,11 @@
     /**
      * Constructor
      */
-    public function __construct()
-    {
+    public function __construct() {
+        $this->host = getenv('DB_HOST') ?: "host";
+        $this->dbname = getenv('DB_NAME') ?: "dbname";
+        $this->user = getenv('DB_USER') ?: "name";
+        $this->pass = getenv('DB_PASS') ?: "pass";
     }
   }
 ?>

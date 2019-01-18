@@ -5,10 +5,10 @@
   final class DB
   {
     private $connection = 0;
-    private $host = getenv('DB_HOST') ?: "host";
-    private $dbname = getenv('DB_NAME') ?: "dbname";
-    private $user = getenv('DB_USER') ?: "name";
-    private $pass = getenv('DB_PASS') ?: "pass";
+    private $host = getenv('DB_HOST') ? getenv('DB_HOST') : "host";
+    private $dbname = getenv('DB_NAME') ? getenv('DB_HOST') : "dbname";
+    private $user = getenv('DB_USER') ? getenv('DB_HOST') : "name";
+    private $pass = getenv('DB_PASS') ? getenv('DB_HOST') : "pass";
     private $dbh;
     private $queryCount = 0;
 
